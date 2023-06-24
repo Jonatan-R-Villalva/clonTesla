@@ -1,18 +1,11 @@
-<section class='landing-section bg-black h-screen w-screen text-center relative'
-data-header-color='white'
->
-    <div class='z-30 relative h-full flex flex-col w-full'>
-        <header class=''>
-            <h2 class='text-white pt-40 text-[40px] font-medium'>Experimente Tesla</h2>
-            <p class='text-white text-sm'>Programe una demostración de manejo hoy</p>
-        </header>
-        <footer class='flex flex-col flex-grow justify-end pb-20'>
-            <div>
-                <a class='border-[3px] border-white bg-white/5 backdrop-blur-sm rounded text-sm font-medium text-white px-12 py-2 hover:bg-white hover:text-black transition-colors' href="#">Unidad de demostración</a>
-            </div>
-        </footer>
+---
+import Section from "./Section.astro"
+Section
+---
+
+<Section color='white' title='Experimente Tesla' subtitle='Programe una demostración de manejo hoy'>
+    <div slot='footer'>
+        <a class='border-[3px] border-white bg-white/5 backdrop-blur-sm rounded text-sm font-medium text-white px-12 py-2 hover:bg-white hover:text-black transition-colors' href="#">Unidad de demostración</a>
     </div>
-    <div class='absolute top-0 bottom-0 h-full object-cover'>
-        <video autoplay muted loop src="../../public/public_video.webm"></video>
-    </div>
-</section>
+    <video slot='background'  autoplay muted loop src="../../public/public_video.webm"></video>
+</Section>
