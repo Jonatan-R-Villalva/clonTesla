@@ -2,7 +2,7 @@
 const {color , title , subtitle} = Astro.props
 const textColor = `text-${color}`
 ---
-<section class='landing-section bg-black h-screen w-screen text-center relative z-10'
+<section class='landing-section bg-black h-screen w-screen text-center relative'
 data-header-color={color}
 >
     <div class='z-30 relative h-full flex flex-col w-full'>
@@ -18,7 +18,7 @@ data-header-color={color}
             <slot name="footer" />
         </footer>
     </div>
-    <div class='absolute top-0 bottom-0 h-full object-cover z-20'>
+    <div class='absolute top-0 bottom-0 h-full object-cover z-10'>
         <slot name="background" />
     </div>
 </section>
