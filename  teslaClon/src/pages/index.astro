@@ -3,6 +3,11 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import HeroSection from '../components/HeroSection.astro';
 import ModelY from '../components/ModelY.astro';
+import Model3 from '../components/ModelThree.astro';
+import ModelS from '../components/ModelS.astro';
+import ModelX from '../components/ModelX.astro';
+import Powerwall from '../components/Powerwall.astro';
+import Charge from '../components/Charge.astro';
 //import Section from '../components/Section.astro';
 ---
 
@@ -12,8 +17,23 @@ import ModelY from '../components/ModelY.astro';
 		<div class='snap-center'>
 			<HeroSection />
 		</div>
+		<div id='models' class='snap-center'>
+			<ModelS />
+		</div>
+		<div id='modelThree' class='snap-center'>
+			<Model3 />
+		</div>
+		<div id='modelx' class='snap-center'>
+			<ModelX />
+		</div>
 		<div id='modely' class='snap-center'>
 			<ModelY />
+		</div>
+		<div id='powerwall' class='snap-center'>
+			<Powerwall />
+		</div>
+		<div id='carga' class='snap-center'>
+			<Charge />
 		</div>
 		
 	</main>
